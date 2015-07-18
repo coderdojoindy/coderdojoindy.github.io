@@ -102,7 +102,10 @@
 		}
     		
     		var thirdSaturdayThisMonth = getThisMonths3rdSaturday(month);
-    		
+	        if (today.getDate() > thirdSaturdayThisMonth) {
+	        	month = month + 1;
+	        	thirdSaturdayThisMonth = getThisMonths3rdSaturday(month);
+	        }    		
   		var monthWord = months[month];
 	        var nextDateWords = monthWord + " " + thirdSaturdayThisMonth +", 2015";
 	    	nextDate.textContent = nextDateWords;
