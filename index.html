@@ -88,8 +88,17 @@
     			"September", "October", "November", "December"
     		];
     		var monthWord = months[month];
-    		var nextDateWords = monthWord + " 18, 2015";
-    		nextDate.textContent = nextDateWords;
+    		var day;
+for (var dateWeAreChecking = 15; 
+        dateWeAreChecking < 21; 
+        dateWeAreChecking = dateWeAreChecking + 1
+) {
+    day = new Date(2015, 8, dateWeAreChecking);
+    if (day.getDay() == 6) {
+        var nextDateWords = monthWord + " " + dateWeAreChecking +", 2015";
+    	nextDate.textContent = nextDateWords;
+    }
+}
     	</script>
 	</body>
 </html>
