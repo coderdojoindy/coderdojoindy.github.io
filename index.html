@@ -80,7 +80,16 @@
     	</div>
     	<script>
     		var nextDate = document.getElementById("next-date");
-    		nextDate.textContent = "May 18, 2015";
+    		var today = new Date();
+    		var month = today.getMonth();
+    		var months = [
+    			"January", "February", "March", "April", 
+    			"May", "June", "July", "August", 
+    			"September", "October", "November", "December"
+    		];
+    		var monthWord = months[month];
+    		var nextDateWords = monthWord + " 18, 2015";
+    		nextDate.textContent = nextDateWords;
     	</script>
 	</body>
 </html>
