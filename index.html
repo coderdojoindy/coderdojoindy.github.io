@@ -94,7 +94,7 @@
         			dateWeAreChecking < 21; 
         			dateWeAreChecking = dateWeAreChecking + 1
   			) {
-			      day = new Date(2015, month, dateWeAreChecking);
+			      day = new Date(2016, month, dateWeAreChecking);
       				if (day.getDay() == 6) {
           			    return dateWeAreChecking;
       				}
@@ -107,7 +107,7 @@
 	        	thirdSaturdayThisMonth = getThisMonths3rdSaturday(month);
 	        }    		
   		var monthWord = months[month];
-	        var nextDateWords = monthWord + " " + thirdSaturdayThisMonth +", 2015";
+	        var nextDateWords = monthWord + " " + thirdSaturdayThisMonth +", 2016";
 	    	nextDate.textContent = nextDateWords;
   
     	</script>
