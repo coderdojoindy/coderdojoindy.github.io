@@ -91,7 +91,7 @@
     		function getThisMonths3rdSaturday (month) {
   			var day;
   			for (var dateWeAreChecking = 15; 
-        			dateWeAreChecking < 21; 
+        			dateWeAreChecking <= 21; 
         			dateWeAreChecking = dateWeAreChecking + 1
   			) {
 			      day = new Date(2017, month, dateWeAreChecking);
