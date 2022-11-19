@@ -1,5 +1,6 @@
 <html>
 	<head>
+	<meta http-equiv="Refresh" content="0; url='https://www.eventbrite.com/e/coderdojo-indy-tickets-169792005459'" />
     	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
     	<link rel="stylesheet" href="app.css"/>
     	<title>CoderDojo main page</title>
@@ -74,7 +75,7 @@
       		</div>
       		<div style="width:100%; text-align:left;" >
       		<h3>Next Dojo is <span id="next-date"></span> from 10:30a to 1:00p</h3>
-      		<div style="width:100%; text-align:left;" ><iframe  src="//eventbrite.com/tickets-external?eid=14291846297&ref=etckt" frameborder="0" height="306" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Event registration</a><span style="color:#ddd;"> for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://www.eventbrite.com/e/coderdojo-indy-tickets-14291846297?ref=etckt">CoderDojo Indy</a> <span style="color:#ddd;">powered by</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>
+      		<div style="width:100%; text-align:left;" ><iframe  src="//eventbrite.com/tickets-external?eid=169792005459&ref=etckt" frameborder="0" height="306" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Event registration</a><span style="color:#ddd;"> for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://www.eventbrite.com/e/coderdojo-indy-tickets-14291846297?ref=etckt">CoderDojo Indy</a> <span style="color:#ddd;">powered by</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>
       		
       		<p>Also check out an <a href="htmleditor.html">HTML sandbox</a> for practicing in HTML! (Currently unfunctional)</p>
     	</div>
@@ -94,7 +95,7 @@
         			dateWeAreChecking <= 21; 
         			dateWeAreChecking = dateWeAreChecking + 1
   			) {
-			      day = new Date(2017, month, dateWeAreChecking);
+			      day = new Date(today.getFullYear(), month, dateWeAreChecking);
       				if (day.getDay() == 6) {
           			    return dateWeAreChecking;
       				}
@@ -107,7 +108,7 @@
 	        	thirdSaturdayThisMonth = getThisMonths3rdSaturday(month);
 	        }    		
   		var monthWord = months[month];
-	        var nextDateWords = monthWord + " " + thirdSaturdayThisMonth +", 2017";
+	        var nextDateWords = monthWord + " " + thirdSaturdayThisMonth +", " + today.getFullYear();
 	    	nextDate.textContent = nextDateWords;
   
     	</script>
